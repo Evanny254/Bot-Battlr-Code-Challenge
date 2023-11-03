@@ -1,0 +1,142 @@
+/* .App {
+   
+} */
+.bot-collection-header {
+    position: relative;
+    animation:  header 4s infinite; 
+    padding: 10px;
+    border: 5px solid green ; 
+    border-radius: 20px;
+   text-align: center;
+   
+
+  
+  }
+  
+  @keyframes header {
+    0%   {color: red;}
+    25%  {color: indigo;}
+    50%  {color: blue;}
+    75%  {color: purple;}
+    100% {color:pink;}
+  }
+  
+.bot-collection {
+    border: 20px solid whitesmoke; 
+    background-color: darkgreen;
+    color: white;
+    padding: 20px;
+    display: flex;
+    border-radius: 10px;
+  }
+  
+  .bot-collection-row {
+    display: flex;
+    flex-wrap: wrap;
+    border: 20px #ccc;
+    gap: 10px;
+}
+ 
+.bot-card {
+    border: 1px solid blue;
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: orange;
+    width: 300px;
+    font-size: small;
+  }
+  
+  .bot-image {
+    display: block;
+   border-radius: 50%;
+   width: 300px; 
+  height: 150px;
+  }
+  
+  
+  .bot-card-content {
+    padding: 10px;
+  }
+  
+  .bot-card-header {
+    font-size: 20px;
+  }
+  
+  .bot-card-catchphrase {
+    font-size: 12px;
+   text-wrap: wrap;
+   margin-right: 5px;
+  }
+  .bot-card-stats {
+    margin-left: 4px;
+    justify-content: space-between;
+  }
+  
+.deleteBtn {
+    background: red;  
+    color: white;      
+    border: none;     
+    padding: 5px 20px; 
+    border-radius: 3px; 
+    cursor: pointer; 
+    margin-top: 5px;
+  }
+  .bot-army-container {
+    background-color: orange;
+    padding: 20px;
+    color: aliceblue;
+    border-radius: 20px;
+  }
+  
+  .bot-army-title {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+  }
+  
+  .bot-army-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .sort-bar{
+    align-items: center;
+    background-color: pink;
+    display: flex;
+    border-radius: 20px;
+   
+  }
+  .sort-health{
+background-color: teal;
+color: white;
+border-radius: 40px;
+padding: 20px;
+margin-inline-start: auto;
+margin-right: auto;
+
+  }
+
+.sort-damage{
+background-color: brown;
+color: white;
+border-radius: 40px;
+padding: 20px;
+margin-right: auto;
+
+
+
+}
+
+
+.sort-armor{
+background-color: black;
+color: white;
+border-radius: 40px;
+padding: 20px;
+margin-right: auto;
+
+
+}
