@@ -1,17 +1,13 @@
-// import { useState } from 'react'
-import './App.css'
+
+import  "./App.css";
+import BotsPage from "./components/BotsPage"
 
 function App() {
-  
-
   return (
-    <>
-      <div>
-        
-      </div>
-      
-    </>
-  )
+    <div className="App">
+      <BotsPage />
+    </div>
+  );
 }
 
-export default App
+export default App;
