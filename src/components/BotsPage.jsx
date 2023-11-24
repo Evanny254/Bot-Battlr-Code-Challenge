@@ -9,9 +9,18 @@ function BotsPage() {
   const [botArmy, setBotArmy] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/bots')
+    fetch('https://api.jsonbin.io/v3/b/65605da512a5d376599ddd11',{
+      method:"GET",
+      headers: {
+        "X-Master-Key":"$2a$10$TrldED.AiOUKYrSbrS2zTOVzrrFuj2ZhDZRwQg./0wT96q4vIRJYm"
+      },
+    })
       .then((response) => response.json())
-      .then((data) => setBotList(data))
+      .then((data) => {
+      
+        let botsArray = data.record.bots
+        console.log(botsArray)
+        setBotList(botsArray)})
   }, []);
 
   function addBotToArmy(bot) {
@@ -33,7 +42,7 @@ function BotsPage() {
       setBotList(botList.filter((b) => b.id !== bot.id));
       setBotArmy(botArmy.filter((b) => b.id !== bot.id));
 
-      fetch(`http://localhost:3000/bots/${bot.id}`, {
+      fetch(`https://api.jsonbin.io/v3/b/65605da512a5d376599ddd11${bot.id}`, {
         method: 'DELETE'
       });
     }
